@@ -72,6 +72,10 @@
     "id" : "_Dv3bgO40EeuF7cQMwg9nCg - configuration",
     "version" : "Latest",
     "type" : "schema"
+  }, {
+    "id" : "_Dv3bgO40EeuF7cQMwg9nCg - project",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
