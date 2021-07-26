@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default">
+  <context confirmationNeeded="false" name="my">
     <contextParameter comment="" name="File_Path" prompt="File_Path?" promptNeeded="false" repositoryContextId="_Nj_wkO5LEeu-c_eU0I3_7Q" type="id_String" value="Company_data.csv"/>
-    <contextParameter comment="" name="Company_data_File" prompt="Company_data_File?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_File" value="/Users/ushashreeuppalanchi/Documents/data/Company_data.csv"/>
+    <contextParameter comment="" name="Company_data_File" prompt="Company_data_File?" promptNeeded="false" type="id_File" value="/Users/ushashreeuppalanchi/Documents/data/Company_data.csv"/>
     <contextParameter comment="" name="Company_data_RowSeparator" prompt="Company_data_RowSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;\n&quot;"/>
-    <contextParameter comment="" name="Company_data_FieldSeparator" prompt="Company_data_FieldSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;,&quot;"/>
-    <contextParameter comment="" name="Company_data_Encoding" prompt="Company_data_Encoding?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="US-ASCII"/>
     <contextParameter comment="" name="Company_data_Header" prompt="Company_data_Header?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data_Encoding" prompt="Company_data_Encoding?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="US-ASCII"/>
+    <contextParameter comment="" name="Company_data_FieldSeparator" prompt="Company_data_FieldSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;,&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="my_pc">
+    <contextParameter comment="" name="File_Path" prompt="File_Path?" promptNeeded="false" repositoryContextId="_Nj_wkO5LEeu-c_eU0I3_7Q" type="id_String" value="Company_data.csv"/>
+    <contextParameter comment="" name="Company_data_File" prompt="Company_data_File?" promptNeeded="false" type="id_File" value="/Users/ushashreeuppalanchi/Documents/data/Company_data.csv"/>
+    <contextParameter comment="" name="Company_data_RowSeparator" prompt="Company_data_RowSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="Company_data_Header" prompt="Company_data_Header?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data_Encoding" prompt="Company_data_Encoding?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="US-ASCII"/>
+    <contextParameter comment="" name="Company_data_FieldSeparator" prompt="Company_data_FieldSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;,&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="my_prod">
+    <contextParameter comment="" name="File_Path" prompt="File_Path?" promptNeeded="false" repositoryContextId="_Nj_wkO5LEeu-c_eU0I3_7Q" type="id_String" value="Company_data.csv"/>
+    <contextParameter comment="" name="Company_data_File" prompt="Company_data_File?" promptNeeded="false" type="id_File" value="/Users/ushashreeuppalanchi/Documents/data/Company_data.csv"/>
+    <contextParameter comment="" name="Company_data_RowSeparator" prompt="Company_data_RowSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="Company_data_Header" prompt="Company_data_Header?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data_Encoding" prompt="Company_data_Encoding?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="US-ASCII"/>
+    <contextParameter comment="" name="Company_data_FieldSeparator" prompt="Company_data_FieldSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;,&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="my_uat">
+    <contextParameter comment="" name="File_Path" prompt="File_Path?" promptNeeded="false" repositoryContextId="_Nj_wkO5LEeu-c_eU0I3_7Q" type="id_String" value="Company_data.csv"/>
+    <contextParameter comment="" name="Company_data_File" prompt="Company_data_File?" promptNeeded="false" type="id_File" value="/Users/ushashreeuppalanchi/Documents/data/Company_data.csv"/>
+    <contextParameter comment="" name="Company_data_RowSeparator" prompt="Company_data_RowSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="Company_data_Header" prompt="Company_data_Header?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data_Encoding" prompt="Company_data_Encoding?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="US-ASCII"/>
+    <contextParameter comment="" name="Company_data_FieldSeparator" prompt="Company_data_FieldSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;,&quot;"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -49,7 +73,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:+nV47dIbmpIqp/5FAFX5yI9PifA3bkDP4Y5mV2Q9"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:p1WnI/zJGAjSl2BkjGPxnQ5H9Kg+u74j0Q7K3i34"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -84,7 +108,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:GLfpWPOI34uMHn+VlZODDvxVeJY62cHp4WaztWng"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9sHWdHm5GUVLqTPRX3MW/GGB6XmG35JBAzzb1zcp"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -555,9 +579,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFilterColumns_3" offsetLabelX="0" offsetLabelY="0" source="tFilterColumns_3" target="tUniqRow_3">
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tFilterColumns_3" offsetLabelX="0" offsetLabelY="0" source="tFilterColumns_3" target="tUniqRow_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row12"/>
   </connection>
   <connection connectorName="UNIQUE" label="row2" lineStyle="0" metaname="UNIQUE" offsetLabelX="0" offsetLabelY="0" source="tUniqRow_3" target="tFileOutputDelimited_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -576,13 +600,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9552c2fb-081f-4669-9939-df6d355ed09b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SRX7bO7sue6CPYMeJkE1OpXA4FHrJIf1qAZaNbiTNY2whqOGMfQZpHazlXQclUuF3Q1rYxu63kFp
-aEx21NoeeQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_310ab666-6932-4701-8036-3e1dfc8a95c3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/iGGGeeX/m/iCiiILn1+BQqnEqHQcFAhq3+Apx6Wctmt7eEM9nHEz7UYtlRlrCw7G5Vur0zFS67S
-CMoKinOYgA==</DigestValue></Reference></SignedInfo><SignatureValue>EDfgG6RivsCTeMLI5FRjPPdNjV1hqsBCtAzKpDN1TQAD+3Pa3olSig+j8Rc/XUnx5ZvQG8+c9Yz4
-+4v7OUST82cmLktNa/4PHsvaBPUOmhfHI5Gm8lRxEhpnbzqBpXK7EBUMtw4F4JkbnRNQJPM/BMj5
-CZUCR3dxb8awy7onpIvy8PJKYkfipVS66ZmDKMWNzPnTITesysPQ90eaHVR2Zrw+bl8QRwcgIGmD
-x/c5N3PsEWEBDRdEbI/I1KikPCRqlaI6DcIv6z+x/tBIvmAUW7EuA4XkGrNVfu6qdqpfO7e+cJUW
-/FCzScalltOwY6pw5liZeJz4RdDGBbhg4Y5raQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0001b144-4d15-42a2-bab3-4aa50bd0660a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5GqBkL9TgfFPCGoJy4zZYmc/urD1CC9ZrlTemJundpTACli9V3A5Q+vofHOE0dt8EGjL/F1MDSkF
+gGubkv0NiQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c46391a7-c20f-4870-9741-16579a9e2285"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Wamvot6CSTedBHHBGNNOoAbWAU7r64zBqR1k8Hhf3M1euoQaus6LJiRJ10ELRdZQVSy260EQjxtu
+5wiZu/x1Pg==</DigestValue></Reference></SignedInfo><SignatureValue>RSvnGHQk1HAuy7EyaHQ1OPuGkCZDu1xvx3vwUptH7x1vt43YgqYOyDlcI8wcI0ni2+4c7ipV/859
+MUN3gAZMc/Kj3H52dF9uXHclW2Mna/NV/G+0VBksthFfmjuLcYVBxGjqbk/dOCbWtyJK+h+DALlb
+7piS1odYdBMQHtY/S/N3yd0R7zY0FRGletUH1FVcaMmjANzHyPl28s4oc/r7n/GVOIa4lBYg5Ryg
+TcfPVcJv8yDG29K+j3uXfcEq3WUMIsBa5zsWiW9n6MAia7q0nXhyjuyim2jacNlo5P8x0eeJlEDE
+r3SUNzMdOEvar0dfZUL+8uzyNsm7vpbS98HcOw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -604,4 +628,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_310ab666-6932-4701-8036-3e1dfc8a95c3" Target="#_9552c2fb-081f-4669-9939-df6d355ed09b"><Timestamp>2021-07-26 21:44:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c46391a7-c20f-4870-9741-16579a9e2285" Target="#_0001b144-4d15-42a2-bab3-4aa50bd0660a"><Timestamp>2021-07-26 22:11:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
