@@ -5,6 +5,11 @@
     <contextParameter comment="" name="Company_data_FieldSeparator" prompt="Company_data_FieldSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;,&quot;"/>
     <contextParameter comment="" name="Company_data_Encoding" prompt="Company_data_Encoding?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="US-ASCII"/>
     <contextParameter comment="" name="Company_data_Header" prompt="Company_data_Header?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data1_File" prompt="Company_data1_File?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_File" value="/Users/ushashreeuppalanchi/Documents/data/output/Company_data.csv"/>
+    <contextParameter comment="" name="Company_data1_RowSeparator" prompt="Company_data1_RowSeparator?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="Company_data1_Header" prompt="Company_data1_Header?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data1_Encoding" prompt="Company_data1_Encoding?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" name="Company_data1_FieldSeparator" prompt="Company_data1_FieldSeparator?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="&quot;,&quot;"/>
   </context>
   <context confirmationNeeded="false" name="my_pc">
     <contextParameter comment="" name="Company_data_File" prompt="Company_data_File?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_File" value="/Users/ushashreeuppalanchi/Documents/data/output/Company_data.csv"/>
@@ -12,6 +17,11 @@
     <contextParameter comment="" name="Company_data_FieldSeparator" prompt="Company_data_FieldSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;,&quot;"/>
     <contextParameter comment="" name="Company_data_Encoding" prompt="Company_data_Encoding?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="US-ASCII"/>
     <contextParameter comment="" name="Company_data_Header" prompt="Company_data_Header?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data1_File" prompt="Company_data1_File?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_File" value="/Users/ushashreeuppalanchi/Documents/data/output/Company_data.csv"/>
+    <contextParameter comment="" name="Company_data1_RowSeparator" prompt="Company_data1_RowSeparator?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="Company_data1_Header" prompt="Company_data1_Header?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data1_Encoding" prompt="Company_data1_Encoding?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" name="Company_data1_FieldSeparator" prompt="Company_data1_FieldSeparator?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="&quot;,&quot;"/>
   </context>
   <context confirmationNeeded="false" name="my_prod">
     <contextParameter comment="" name="Company_data_File" prompt="Company_data_File?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_File" value="/Users/prodi/Documents/data/output/Company_data.csv"/>
@@ -19,6 +29,11 @@
     <contextParameter comment="" name="Company_data_FieldSeparator" prompt="Company_data_FieldSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;,&quot;"/>
     <contextParameter comment="" name="Company_data_Encoding" prompt="Company_data_Encoding?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="US-ASCII"/>
     <contextParameter comment="" name="Company_data_Header" prompt="Company_data_Header?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data1_File" prompt="Company_data1_File?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_File" value="/Users/ushashreeuppalanchi/Documents/data/output/Company_data.csv"/>
+    <contextParameter comment="" name="Company_data1_RowSeparator" prompt="Company_data1_RowSeparator?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="Company_data1_Header" prompt="Company_data1_Header?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data1_Encoding" prompt="Company_data1_Encoding?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" name="Company_data1_FieldSeparator" prompt="Company_data1_FieldSeparator?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="&quot;,&quot;"/>
   </context>
   <context confirmationNeeded="false" name="my_uat">
     <contextParameter comment="" name="Company_data_File" prompt="Company_data_File?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_File" value="/Users/uat/Documents/data/output/Company_data.csv"/>
@@ -26,6 +41,25 @@
     <contextParameter comment="" name="Company_data_FieldSeparator" prompt="Company_data_FieldSeparator?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="&quot;,&quot;"/>
     <contextParameter comment="" name="Company_data_Encoding" prompt="Company_data_Encoding?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_String" value="US-ASCII"/>
     <contextParameter comment="" name="Company_data_Header" prompt="Company_data_Header?" promptNeeded="false" repositoryContextId="_cHlD4O5NEeu-c_eU0I3_7Q" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data1_File" prompt="Company_data1_File?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_File" value="/Users/ushashreeuppalanchi/Documents/data/output/Company_data.csv"/>
+    <contextParameter comment="" name="Company_data1_RowSeparator" prompt="Company_data1_RowSeparator?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="Company_data1_Header" prompt="Company_data1_Header?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data1_Encoding" prompt="Company_data1_Encoding?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="UTF-8"/>
+    <contextParameter comment="" name="Company_data1_FieldSeparator" prompt="Company_data1_FieldSeparator?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="&quot;,&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Development">
+    <contextParameter comment="" name="Company_data1_RowSeparator" prompt="Company_data1_RowSeparator?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="Company_data1_Header" prompt="Company_data1_Header?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data1_File" prompt="Company_data1_File?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_File" value="/Users/ushashreeuppalanchi/Documents/data/output/Company_data.csv"/>
+    <contextParameter comment="" name="Company_data1_FieldSeparator" prompt="Company_data1_FieldSeparator?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="Company_data1_Encoding" prompt="Company_data1_Encoding?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="UTF-8"/>
+  </context>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="Company_data1_RowSeparator" prompt="Company_data1_RowSeparator?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="&quot;\n&quot;"/>
+    <contextParameter comment="" name="Company_data1_Header" prompt="Company_data1_Header?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_Integer" value="1"/>
+    <contextParameter comment="" name="Company_data1_File" prompt="Company_data1_File?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_File" value="/Users/ushashreeuppalanchi/Documents/data/output/Company_data.csv"/>
+    <contextParameter comment="" name="Company_data1_FieldSeparator" prompt="Company_data1_FieldSeparator?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="&quot;,&quot;"/>
+    <contextParameter comment="" name="Company_data1_Encoding" prompt="Company_data1_Encoding?" promptNeeded="false" repositoryContextId="_9MbW4O7nEeumfNr-qAW1bA" type="id_String" value="UTF-8"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -69,7 +103,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:u0QN+iNeCIrx8BUQQ6e5ia/z3RUCWICHzw3JShFT"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:w/xzth37tBdouE8iUUQ09zkLD+EkRQQ94DfzL8ch"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -104,7 +138,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+I3whcVUY4l9A2xEYE4ugytwWVei2CIpC4Alumky"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:AuUQ66KVJQqbSHvMHWqjZm77dya3GIsLRCA7Nxl5"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -377,13 +411,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_904aaafa-2c89-4eb5-aa98-6fd5614d4cd1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>akGFgrmJK+7EUayp99ltU4GBKD8oJZ2QCl0dm/nuCMECoT+jvGl236XaRz2nQzcW/kYHdXaSfW1s
-tWVQl7SJZg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3395c545-2dd5-45ba-85fa-9aeb83804d68"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6XBM15wDwnDkzC8JcJNpIr5kKAun/XuZOTgDhAvtHXJDOA67lClKYrpnrOfax7gKP3+AjqMHHUy1
-NpgSOXTfQw==</DigestValue></Reference></SignedInfo><SignatureValue>iEzco7uvlEssyo5EpXSCT6C8bzGMmKLBs8rxXL1XSc++CBzGAGWkcXMkpVCNeSwGj9ITfQDNayQ1
-Z+UZgDoTXTGVvKYIbmf6Ioeyh0KBocc8fCg/PjSQp/Xa1xr5aOrc65s59JmRAxXCUWXCe8ADzcw5
-SJ7qYkD53nWrvcB23Cp/T7hggSZfb+De/KIAmfW4DDA/nsKaMJeF/i6ZseWDesVy1mMqCL3U0sTk
-K8J/KPuVlBBHV4PBLaXVz4wvbIRwMjCbxjNymPGW1r4xDnlhbXd5slreR4YfBPfB+biVjRM+HJjR
-YCNujQhSwdBkzLB7Yq1UEPo/mc83/yqMSlC9UQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_25bab95b-80a9-4d7a-a7b9-88801e7ead8b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zJGiYXOeMUH/SYkmNUjFeGJJB1K7ZF97RJOdLtyN5R682Nf3Vgj3xM3U+yLhI4LoUdbkEHF4eddK
+NpxPQnmy0A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d54ec6ab-f732-4f29-9cfc-048ac1811ce4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kVwHa2cusL4EGUUjN8BtbOks/vN8WxHQIGbXuGuMC5MsOucBnCVmX7zBiby3NYHzGNlTjIPHbuvv
+MM3ZEYvhAQ==</DigestValue></Reference></SignedInfo><SignatureValue>iOz68aMdUP82tFhz3uKnY/YCgtTS11AWuqXfxBD+OEeSrY3hkoT8sghTRpgIR37xJo/cuZ+TSIcw
+1rxx4o8H5f80E41ARWgMCO0Ss6UCbdQlJOq1/iz+zgme7rB03vTrGbhrtgV5kndDLln/G8RxlkFm
+u0kjsaHTz/yrl2a/u+IqNWCVxhWB+ZLqPlHArkzGuz4Kz+C39uIWUWQeQcQw0Ml4FfI0aN6XlxnA
+Ju1AyRtC4JFceE3BQxVJs9Px5sCoqk5YLuIaIjee7gQQaynuAQufcLrhugWjyUU2NgmlAxtBRaNU
+aagzJO8F4cJdoIWLRFUL7pBQwIw+hJR2cvbmpA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -405,4 +439,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3395c545-2dd5-45ba-85fa-9aeb83804d68" Target="#_904aaafa-2c89-4eb5-aa98-6fd5614d4cd1"><Timestamp>2021-07-27 14:36:14</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d54ec6ab-f732-4f29-9cfc-048ac1811ce4" Target="#_25bab95b-80a9-4d7a-a7b9-88801e7ead8b"><Timestamp>2021-07-27 14:36:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
