@@ -41,7 +41,7 @@ public class user_demo {
 		//if its only numeric send it to Stewardship
 		String str3="1";
 		if (str3.matches("[0-9]+") && str3.length() > 2)
-		System.out.println(str3);
+		System.out.println("str3: ---> "+str3);
 		
 		//Remove Alpha and special characters.
 		String str2="a1b2c0%^&*".replaceAll("[^0-9\\s+]", "");
