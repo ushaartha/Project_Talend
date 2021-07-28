@@ -17,6 +17,7 @@
     <module>jobs/process/practise_1_0.1</module>
     <module>jobs/process/job_32_0.1</module>
     <module>jobs/process/GettingStarted/helloworld_0.1</module>
+    <module>jobs/process/Usecase2/job1_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
