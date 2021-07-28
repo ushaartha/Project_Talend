@@ -44,7 +44,7 @@ public class user_demo {
 		System.out.println(str3);
 		
 		//Remove Alpha and special characters.
-		String str2="a1b2c3%^&*".replaceAll("[^0-9\\s+]", "");
+		String str2="a1b2c0%^&*".replaceAll("[^0-9\\s+]", "");
 		System.out.println(str2);
 		if(new Integer(str2) > 120)
 			System.out.println("value > 120");
