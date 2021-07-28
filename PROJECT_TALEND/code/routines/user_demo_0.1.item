@@ -41,6 +41,7 @@ public class user_demo {
 		if (str3.matches("[0-9]+") && str3.length() > 2) {
 		System.out.println(str3);
 		}
+		System.out.println("a1b2c3%^&*".replaceAll("[^0-9\\s+]", ""));
 	}
 	
     public static void helloExample(String message) {
