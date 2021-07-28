@@ -32,6 +32,12 @@ public class user_demo {
      * 
      * {example} helloExemple("world") # hello world !.
      */
+	public static void main(String args[])
+	{
+		String str=("[u' %$HI# Jhon, $how$ are *&$%you.%$").replace("/[^.,a-zA-Z ]/g", "");
+		System.out.println(str);
+	}
+	
     public static void helloExample(String message) {
         if (message == null) {
             message = "World"; //$NON-NLS-1$
