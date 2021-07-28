@@ -49,6 +49,9 @@ public class user_demo {
 		if(new Integer(str2) > 120)
 			System.out.println("value > 120");
 		
+		//Remove numeric and special characters.
+		String str4="a1b2c0%^&*".replaceAll("[^a-zA-Z0-9\\s+]", "");
+		
 	}
 	
     public static void helloExample(String message) {
