@@ -39,8 +39,8 @@ public class user_demo {
 		System.out.println(str);
 		String str2="a1b2c3";
 		String str3="1";
-		if (str2.matches("[0-9]+") ) {
-		System.out.println(str2);
+		if (str3.matches("[0-9]+") && str3.length() > 2) {
+		System.out.println(str3);
 		}
 	}
 	
