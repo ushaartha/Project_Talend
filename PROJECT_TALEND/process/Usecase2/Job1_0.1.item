@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:rjw4admros1puSJkWVdocPqtUjOeFQbc2D4CXyXU"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:wg8Krtvh17h+xLecpaJlC0xMY7mpP3b0l/tJQ6Ou"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -85,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:+uhRQ0wOLZFG2iVBd/NWiXYxmMZSYTXtGgoyh20b"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:uMi7HCUVXcwRBuQqoKC0d3jxdkJ8Mbhx1MsSBrla"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -368,36 +368,40 @@
       <column comment="" key="false" length="10" name="LastName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="PhoneNumber" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="Email" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Age" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Gender" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Age" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="21" name="Street1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="ZipCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="fname_check" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="lname_check" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="age_check" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row2.FirstName .replaceAll(&quot;[^',a-zA-Z0-9\\s+]&quot;, &quot;&quot;) " name="v_fname" type="id_String"/>
         <mapperTableEntries expression="(Var.v_fname.matches(&quot;[0-9]+&quot;) &amp;&amp; Var.v_fname.length() &gt; 0)&#10;?&quot;Y&quot;&#10;:&quot;N&quot; " name="fname_steward" type="id_String"/>
         <mapperTableEntries expression="row2.LastName .replaceAll(&quot;[^',a-zA-Z0-9\\s+]&quot;, &quot;&quot;) " name="v_lname" type="id_String"/>
         <mapperTableEntries expression="(Var.v_lname.matches(&quot;[0-9]+&quot;) &amp;&amp; Var.v_lname.length() &gt; 0)&#10;?&quot;Y&quot;&#10;:&quot;N&quot; " name="lname_steward" type="id_String"/>
+        <mapperTableEntries expression="row2.Gender " name="v_gender" type="id_String"/>
+        <mapperTableEntries expression="Relational.ISNULL(row2.Age)&#10;&#9;? null&#10;&#9;:new Integer(row2.Age.replaceAll(&quot;[^0-9\\s+]&quot;, &quot;&quot;)) " name="v_age" type="id_Integer"/>
       </varTables>
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="Var.v_fname " name="FirstName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="LastName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PhoneNumber" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Email" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="" name="Gender" nullable="true" type="id_Character"/>
-        <mapperTableEntries name="Age" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Street1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.v_lname " name="LastName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="PhoneNumber" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="" name="Email" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.v_gender " name="Gender" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.v_age" name="Age" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="" name="Street1" nullable="true" type="id_String"/>
         <mapperTableEntries name="City" nullable="true" type="id_String"/>
         <mapperTableEntries name="State" nullable="true" type="id_String"/>
         <mapperTableEntries expression="" name="ZipCode" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="&quot;Y&quot;.equals(Var.fname_steward )&#10;?&quot;First Name Contains Numbers Only&quot;&#10;:&quot;Check Passed&quot; " name="fname_check" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;Y&quot;.equals(Var.lname_steward )&#10;?&quot;Last Name Contains Numbers Only&quot;&#10;:&quot;Check Passed&quot; " name="lname_check" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.v_age &gt; 120&#10;?&quot;Age is greater than 120&quot;&#10;:&quot;Check Passed&quot; " name="age_check" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
         <mapperTableEntries name="FirstName" nullable="true" type="id_String"/>
@@ -489,13 +493,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_09c437d5-e721-4207-b68c-88bfe9679a34"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1wg5dJf7g2hSWzQhFkBlOtw8dFWaAPzFbc8BZtWMzA9ESy8NAjBrrNYMaZCDnWaTVHNtjXCySXgp
-bY8oLdrpbQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a318ff07-a44f-42d2-a42d-2e7cca993331"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mMoSu0lfNjWD6tmDYp9vnYJboJMoHqm4y/372pPIn0P2jB0kdEFAoeyaoD2oOlRURdejfeuq/0SR
-pyV9g6Tz2w==</DigestValue></Reference></SignedInfo><SignatureValue>UkSEXWeHVqcQudU3tvOh9WfIFzqyiuIojRvEo9VnQVoA3DLlEVJUFdMaC5ITqMAWI0TMDQGEGenK
-kmANLF+SE2y8TXt7TJbocHwcbxkLgFGMqyra0NFDlqww/XVKIdGIFYkMo0p/xJRSFI0aoEQsstTw
-5erF/+9LS+voZlgwcnFA6Q/0IvwYhU0EievkAIJ7E8lVQMSBUckaaHzJNOQh+Is5xMTy7wjTawla
-s8Zxlj9mBKt5Kytc5XVMnvefziO57d2TxoWK/IkY/dS+ux1RuENoI9hE85lHQgCniDcxYAq4gDHV
-2DsRrHD8uT6LYszefJS9aFoEsmEtG08Ezoi9bA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c4aaf5ae-68c4-4fbf-8929-ab4b5bc73c3f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KD4Bm87uLdB9ZeHHeiADnjrt3SzdZKvAl/ZG904QgzvQPCxAzpAwm47MSl2C+quUA61NRH8Dvd1d
+nefcV8bQEw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a1ce53b3-c072-4d29-acac-002831138b61"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/KM2QEAgKjxrhI6O4LqjooNrIS+GXE3mULerLMJgKdt5XfQFxJwLloSIoGPlTNGjfIol6mQd9jt4
+F2B5Lt4qBw==</DigestValue></Reference></SignedInfo><SignatureValue>H/0YCIH+U67VyO6sl7gxLtawukar+pp0zZwwMyIccoWLoAGSb2WegS7S5ve3TdiYsrLyUrw2q4XP
+m1CErsi4S+5k0hDd7ak9nrkaWSlSHYMIPlbnIDu1mJTkEaRzub5WBXvZRvEB6NVxq7CRpdSh6WdT
+YonT+jAjip9ARxEdeaDNQcyg5luilC3yeZsR8PMA2JSSwv+MCmmMrB7AJ9mrnm6IGAscyIS13sqD
+lQsT8/GFa7zJ9t55nog2mpIYHdQNo15SjSjcvjrUKxsXoVmmszo0D6W+JfTBrhqcXARYwdRBRxV3
+O+tC31gPMObWyOyv9Gw99MSRri4KZXgGG+pNeg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -517,4 +521,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a318ff07-a44f-42d2-a42d-2e7cca993331" Target="#_09c437d5-e721-4207-b68c-88bfe9679a34"><Timestamp>2021-07-28 14:58:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a1ce53b3-c072-4d29-acac-002831138b61" Target="#_c4aaf5ae-68c4-4fbf-8929-ab4b5bc73c3f"><Timestamp>2021-07-28 16:19:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
