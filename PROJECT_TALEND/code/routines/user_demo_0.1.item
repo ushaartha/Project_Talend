@@ -36,7 +36,7 @@ public class user_demo {
 	{
 		//Remove all special character except , and ’
 		String str=("[u' %$HI# Jhon, $how$ are *&$%you.%$").replaceAll("[^',a-zA-Z0-9\\s+]", "");
-		System.out.println(str);
+		System.out.println("str: ---> "+str);
 		
 		//if its only numeric send it to Stewardship
 		String str3="1000000";
