@@ -37,6 +37,10 @@ public class user_demo {
 		//String str=("[u' %$HI# Jhon, $how$ are *&$%you.%$").replaceAll("/[^.,a-zA-Z ]/g", "");
 		String str=("[u' %$HI# Jhon, $how$ are *&$%you.%$").replaceAll("[^',a-zA-Z0-9\\s+]", "");
 		System.out.println(str);
+		String str2="a1b2c3";
+		String str3="123";
+		if (str3.matches("[0-9]+") && str3.length() > 2) {
+		System.out.println(str3);
 	}
 	
     public static void helloExample(String message) {
