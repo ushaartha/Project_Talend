@@ -34,7 +34,7 @@ public class user_demo {
      */
 	public static void main(String args[])
 	{
-		String str=("[u' %$HI# Jhon, $how$ are *&$%you.%$").replace("/[^.,a-zA-Z ]/g", "");
+		String str=("[u' %$HI# Jhon, $how$ are *&$%you.%$").replaceAll("/[^.,a-zA-Z ]/g", "");
 		System.out.println(str);
 	}
 	
