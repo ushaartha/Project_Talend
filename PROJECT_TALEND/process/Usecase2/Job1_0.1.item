@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Zy8zB4lUFOvyg099Hqn9gemiJdbh9y6q1EWBVQhQ"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:b9kHaiC83iv1jTOVhwdY1r+TQbHivFfm/ar6m9cX"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -85,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5Ns21cRiZPuESt3fyX39Qow7d89yUCCpA6p3ZXlN"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2Ejg+3Yu+8PTEMgHksVD0+0esj2vMMqlEif7W8n0"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -408,6 +408,9 @@
       <column comment="" key="false" length="14" name="City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="ZipCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="error">
       <column comment="" key="false" length="10" name="FirstName" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -442,8 +445,11 @@
         <mapperTableEntries expression="Relational.ISNULL(row2.City)&#10;? null: row2.City.replaceAll(&quot;[^a-zA-Z\\s+]&quot;, &quot;&quot;); " name="City" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Relational.ISNULL(row2.State)&#10;? null&#10;:&#10;row2.State.replaceAll(&quot;[^a-zA-Z\\s+]&quot;, &quot;&quot;); " name="State" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Relational.ISNULL(row2.ZipCode)&#10;?null&#10;:row2.ZipCode.replace(&quot;[^0-9+]//s+&quot;, &quot;&quot;) " name="ZipCode" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.fname_steward " name="newColumn" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.lname_steward " name="newColumn1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.v_age " name="newColumn2" nullable="true" type="id_String"/>
       </outputTables>
-      <outputTables activateCondensedTool="true" activateExpressionFilter="true" expressionFilter="Var.fname_steward==&quot;Y&quot; ||  Var.lname_steward == &quot;Y&quot; ||  Var.v_age ==999" name="error" reject="true" sizeState="INTERMEDIATE">
+      <outputTables activateCondensedTool="true" activateExpressionFilter="true" expressionFilter="Var.fname_steward==&quot;Y&quot; ||  Var.lname_steward == &quot;Y&quot; ||  Var.v_age ==999" name="error" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row2.FirstName" name="FirstName" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.LastName" name="LastName" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.PhoneNumber" name="PhoneNumber" nullable="true" type="id_String"/>
@@ -505,6 +511,12 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ZipCode"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -520,6 +532,9 @@
       <column comment="" key="false" length="14" name="City" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="State" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="ZipCode" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="224">
@@ -657,6 +672,17 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <connection connectorName="FLOW" label="pass" lineStyle="0" metaname="pass" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="newColumn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="newColumn2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="newColumn1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="pass"/>
   </connection>
@@ -674,13 +700,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_428d6f79-c2d0-408f-89f1-d76d807f55c2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6G0u54Jbb2ddjf5pksHgyIA5F7JNypfN14p5/WdxvQ8bGjP8NXrNTthdhD2+maX9mLKkkKFbGVYm
-Rx3A1l7JHg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_321745bc-b894-46f1-859d-3b99588d980d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aHM+/0Ukn/ik+YbQJfarVDkwRgieszz4dKxUR7UkMTTCODqCo+NAkeA0x73pVXLQxYUtmfkeidpv
-tw17YqOOUg==</DigestValue></Reference></SignedInfo><SignatureValue>JsUXufUAo7Tv2GYVVetXjRVUnMvvaqv9XA5OyqcpSN/sbs/40C9TMzM1GkgA+eoRffBrksd6fS+U
-3XCDWY86uTp+xM+w76p7wRwM57/Zc1OxQEBgRLzMu6tvw236Y/T2vkZEmbOwNsuRJFZa3oV2Q+XH
-+Fc7axwoCmZjQdSXEM8MmUk1duvnNoK1skFIq4jDB/1t4XAFMGrxm3CpJTyQQ5kZ8M2vpDmwk5i6
-wlzNU+zSHEZfhwRE1WyW7f7qgW6CTEe29SPuWZPvKNh43U/QNyKQR359of1CxVLUX8cQODjEUdzH
-5i5wvCWG/7EYpm+bso6AOvWeCsNYgSmDNuU1Dg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f4d182c7-50ae-4c18-9c3d-9c1d44eee557"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tlFzLurWW8qZtcMCUpjT7lVi+qtH4gSMdoTWkmhCmkHa0IMobIbZCAcIQdEl0NOeH5ZJlUOe7ind
++u0DNcLLnA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f13a353a-9f8e-4c9d-a5e3-9514c4725ff9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RLLbwBGWm7tibJiZSmZHqqbwKvIUu/KBX5RFWvMUcQbn94/BZEVTbk5Puc/MCr6iHAcW3AyvAMdJ
+IEdmO+6njA==</DigestValue></Reference></SignedInfo><SignatureValue>Tj+LRH7Crx4Rvgl5tsiTv/PYy93IaHw5MlxIjTz6jGLwwrt9adUHsiLg+qO6ySz0G19MT10z/x8B
+Jw46YwIm9tRVVRpOoUAil21IyHAX7kaXH7qkhzpY/zMrSFvVDzCqb619pOCGjHBSW0R8qYJK7Ib5
+o5j05GHmnc48Lb/2IqzdHv4igGodmdHiZlWrxVwfg10OwR2nBOkDi05tM/fYTukADhi6i56BeLBL
+aM174WVIw76RQaHWvx8gun+P3n94dWU3pH3NfvRHDLGSxN/Fv+c5oiccG7egiuKwezXEXg9Ujjje
+3rz5Kga9ri0tzzsAyZaOz+dte057iCBU6c4uMA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -702,4 +728,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_321745bc-b894-46f1-859d-3b99588d980d" Target="#_428d6f79-c2d0-408f-89f1-d76d807f55c2"><Timestamp>2021-07-28 19:12:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f13a353a-9f8e-4c9d-a5e3-9514c4725ff9" Target="#_f4d182c7-50ae-4c18-9c3d-9c1d44eee557"><Timestamp>2021-07-28 19:27:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
