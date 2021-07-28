@@ -34,14 +34,18 @@ public class user_demo {
      */
 	public static void main(String args[])
 	{
-		//String str=("[u' %$HI# Jhon, $how$ are *&$%you.%$").replaceAll("/[^.,a-zA-Z ]/g", "");
+		//Remove all special character except , and ’
 		String str=("[u' %$HI# Jhon, $how$ are *&$%you.%$").replaceAll("[^',a-zA-Z0-9\\s+]", "");
 		System.out.println(str);
+		
+		//if its only numeric send it to Stewardship
 		String str3="1";
-		if (str3.matches("[0-9]+") && str3.length() > 2) {
+		if (str3.matches("[0-9]+") && str3.length() > 2)
 		System.out.println(str3);
-		}
-		System.out.println("a1b2c3%^&*".replaceAll("[^0-9\\s+]", ""));
+		
+		//Remove Alpha and special characters.
+		String str2="a1b2c3%^&*".replaceAll("[^0-9\\s+]", "");
+		System.out.println(str2);
 	}
 	
     public static void helloExample(String message) {
