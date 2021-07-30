@@ -21,6 +21,7 @@
     <module>jobs/process/Usecase2/customer_dq_checks_0.1</module>
     <module>jobs/process/GettingStarted/joba_0.1</module>
     <module>jobs/process/GettingStarted/jobb_0.1</module>
+    <module>jobs/process/GettingStarted/joba_0.2</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
